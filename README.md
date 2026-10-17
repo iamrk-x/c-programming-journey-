@@ -19,6 +19,8 @@ This repository collects the practice programs and patterns I've worked on while
 - [Frequency of a Digit](digit_frequency.c)
 - [Armstrong Number](armstrong_number.c)
 - [Prime Number Check](prime_number.c)
+- [Even or Odd Number](even_odd_number.c)
+- [Simple Calculator](calculator.c)
 
 ## Nested-loop patterns
 
