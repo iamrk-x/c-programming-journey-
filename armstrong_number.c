@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main(void) {
-    int n, copy, temp, digit, digits = 0;
+int main() {
+    int n, copy, temp, digit, digits = 0, i;
     long long sum = 0, power;
-    
+
     printf("Enter a non-negative integer: ");
     if (scanf("%d", &n) != 1 || n < 0) {
         printf("Please enter a valid non-negative integer.\n");
@@ -13,30 +13,32 @@ int main(void) {
     copy = n;
     temp = n;
 
-    // Count the digits. Zero has one digit.
-    do {
-        digits++;
-        temp /= 10;
-    } while (temp != 0);
+    if (temp == 0) {
+        digits = 1;
+    } else {
+        while (temp != 0) {
+            digits++;
+            temp /= 10;
+        }
+    }
 
     temp = n;
-    do {
+    while (temp != 0) {
         digit = temp % 10;
         power = 1;
-
-        for (int i = 0; i < digits; i++) {
+        i = 1;
+        while (i <= digits) {
             power *= digit;
+            i++;
         }
-
         sum += power;
         temp /= 10;
-    } while (temp != 0);
+    }
 
     if (sum == copy) {
         printf("%d is an Armstrong number.\n", copy);
     } else {
         printf("%d is not an Armstrong number.\n", copy);
     }
-
     return 0;
 }
