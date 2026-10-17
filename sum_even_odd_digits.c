@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int n, digit, even_sum = 0, odd_sum = 0;
 
     printf("Enter a non-negative integer: ");
