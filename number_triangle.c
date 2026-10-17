@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int i = 1, j;
 
     while (i <= 5) {
