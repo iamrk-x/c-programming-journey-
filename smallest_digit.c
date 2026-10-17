@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int n, digit, smallest = 9;
 
     printf("Enter a non-negative integer: ");
@@ -9,13 +9,17 @@ int main(void) {
         return 1;
     }
 
-    do {
+    if (n == 0) {
+        smallest = 0;
+    }
+
+    while (n != 0) {
         digit = n % 10;
         if (digit < smallest) {
             smallest = digit;
         }
         n /= 10;
-    } while (n != 0);
+    }
 
     printf("Smallest digit: %d\n", smallest);
     return 0;
