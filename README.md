@@ -21,6 +21,7 @@ This repository collects the practice programs and patterns I've worked on while
 - [Prime Number Check](prime_number.c)
 - [Even or Odd Number](even_odd_number.c)
 - [Simple Calculator](calculator.c)
+- [Leap Year Check](leap_year.c)
 
 ## Nested-loop patterns
 
