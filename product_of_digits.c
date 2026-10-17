@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int n, digit, product = 1;
 
     printf("Enter a non-negative integer: ");
