@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int n, target, digit, count = 0;
 
     printf("Enter a non-negative integer: ");
@@ -15,16 +15,11 @@ int main(void) {
         return 1;
     }
 
-    // Special case: the number 0 contains one zero digit.
-    if (n == 0 && target == 0) {
-        count = 1;
-    }
+    if (n == 0 && target == 0) count = 1;
 
     while (n != 0) {
         digit = n % 10;
-        if (digit == target) {
-            count++;
-        }
+        if (digit == target) count++;
         n /= 10;
     }
 
