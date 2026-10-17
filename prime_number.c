@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int n, i = 2, is_prime = 1;
 
     printf("Enter an integer: ");
